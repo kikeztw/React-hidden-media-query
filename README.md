@@ -26,7 +26,7 @@ import HiddenMediaQuery from './HiddenMediaQuery';
 export default () => (
   <div>
     <HiddenMediaQuery queryKey="up" breakPoint="sm">
-      <div>i hide in sm :D </div>
+      <div>I hide in sm and up :D </div>
     </HiddenMediaQuery>
     <div>
       i never hide
