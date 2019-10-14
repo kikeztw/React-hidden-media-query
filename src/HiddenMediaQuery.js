@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const breakePointsDefaultsKerys = ['sm','md','lg','xl'];
+const breakePointsDefaultsKeys = ['sm','md','lg','xl'];
 
 const queryBreakPointUp = {
   sm: 600, // >=
@@ -60,12 +60,12 @@ HiddenMediaQuery.defaultProps = {
 
 HiddenMediaQuery.propTypes = {
   queryKey: PropTypes.oneOf(['down', 'up']), 
-  breakPoint: PropTypes.oneOf(['sm', 'md','lg','xl']),
+  breakPoint: PropTypes.oneOf(breakePointsDefaultsKeys),
   range: PropTypes.oneOfType([
     PropTypes.oneOf([null]),
     PropTypes.arrayOf(
       (propValue, key, componentName, location, propFullName) => {
-        if (breakePointsDefaultsKerys.indexOf(propValue[0], propValue[1]) === -1) {
+        if (breakePointsDefaultsKeys.indexOf(propValue[0], propValue[1]) === -1) {
           return new Error(
             'Invalid prop `' + propFullName + '` supplied to' +
             ' `' + componentName + '`. Validation failed.'
