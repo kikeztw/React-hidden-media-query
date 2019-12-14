@@ -19,7 +19,7 @@ range: a range in which only the component will be displayed
 
 
 example without range
-```
+```js
 import React from 'react';
 import HiddenMediaQuery from './HiddenMediaQuery';
 
@@ -37,7 +37,7 @@ export default () => (
 
 
 example with range
-```
+```js
 import React from 'react';
 import HiddenMediaQuery from './HiddenMediaQuery';
 
